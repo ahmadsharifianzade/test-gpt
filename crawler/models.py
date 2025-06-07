@@ -1,4 +1,3 @@
-from django.db import models
 
 
 class Form(models.Model):
@@ -46,4 +45,5 @@ class Answer(models.Model):
     text = models.TextField(blank=True, null=True)
     option = models.ForeignKey(Option, on_delete=models.SET_NULL, blank=True, null=True)
     rating = models.IntegerField(blank=True, null=True)
+
 

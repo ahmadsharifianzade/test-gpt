@@ -1,4 +1,3 @@
-from django.contrib import admin
 
 from .models import Form, Question, Option, Response, Answer
 
@@ -34,4 +33,3 @@ class ResponseAdmin(admin.ModelAdmin):
 class AnswerAdmin(admin.ModelAdmin):
     list_display = ("response", "question", "text", "option", "rating")
     list_filter = ("question__type",)
-
